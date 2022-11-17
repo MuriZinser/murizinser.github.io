@@ -1,0 +1,69 @@
+.footer {
+  background: #000000;
+}
+
+.footer_container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.footer_texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer_contato li {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer_contato li a {
+  color: #ffffff;
+}
+
+.footer_copy {
+  grid-column: 1/-1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.footer_contato h3::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: -72px;
+  bottom: -50px;
+}
+
+.footer_email h3::before {
+  background: url("../img/email.svg") no-repeat center center;
+}
+.footer_telefone h3::before {
+  background: url("../img/telefone.svg") no-repeat center center;
+}
+.footer_instagram h3::before {
+  background: url("../img/instagram.svg") no-repeat center center;
+}
+
+@media (max-width: 800px) {
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer_contato li {
+    font-size: 1.5rem;
+  }
+}
