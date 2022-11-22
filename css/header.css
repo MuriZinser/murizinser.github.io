@@ -1,10 +1,15 @@
 header {
-  max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0e0;
+  z-index: 1;
 }
 
 .header_menu {
@@ -23,6 +28,11 @@ header {
   display: block;
   background: #f5f5f5;
   border-radius: 4px;
+}
+
+.header a:hover {
+  background-color: #068438;
+  color: white;
 }
 
 @media (max-width: 800px) {

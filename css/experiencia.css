@@ -1,6 +1,6 @@
 .experiencia {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -15,7 +15,7 @@
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   color: #525252;
 }
 
@@ -79,6 +79,11 @@
   border-radius: 4px;
   background: #ffffff;
   padding: 5px 10px;
+}
+
+.empresa li:hover {
+  background-color: #068438;
+  color: white;
 }
 
 @media (max-width: 800px) {
